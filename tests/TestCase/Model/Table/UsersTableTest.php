@@ -3,20 +3,20 @@ declare(strict_types=1);
 
 namespace App\Test\TestCase\Model\Table;
 
-use App\Model\Table\PostsTable;
+use App\Model\Table\UsersTable;
 use Cake\TestSuite\TestCase;
 
 /**
- * App\Model\Table\PostsTable Test Case
+ * App\Model\Table\UsersTable Test Case
  */
-class PostsTableTest extends TestCase
+class UsersTableTest extends TestCase
 {
     /**
      * Test subject
      *
-     * @var \App\Model\Table\PostsTable
+     * @var \App\Model\Table\UsersTable
      */
-    protected $Posts;
+    protected $Users;
 
     /**
      * Fixtures
@@ -24,8 +24,9 @@ class PostsTableTest extends TestCase
      * @var array
      */
     protected $fixtures = [
-        'app.Posts',
         'app.Users',
+        'app.Posts',
+        'app.SocialAccounts',
     ];
 
     /**
@@ -36,8 +37,8 @@ class PostsTableTest extends TestCase
     public function setUp(): void
     {
         parent::setUp();
-        $config = $this->getTableLocator()->exists('Posts') ? [] : ['className' => PostsTable::class];
-        $this->Posts = $this->getTableLocator()->get('Posts', $config);
+        $config = $this->getTableLocator()->exists('Users') ? [] : ['className' => UsersTable::class];
+        $this->Users = $this->getTableLocator()->get('Users', $config);
     }
 
     /**
@@ -47,7 +48,7 @@ class PostsTableTest extends TestCase
      */
     public function tearDown(): void
     {
-        unset($this->Posts);
+        unset($this->Users);
 
         parent::tearDown();
     }
@@ -68,16 +69,6 @@ class PostsTableTest extends TestCase
      * @return void
      */
     public function testBuildRules(): void
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-
-    /**
-     * Test createSlug method
-     *
-     * @return void
-     */
-    public function testCreateSlug(): void
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

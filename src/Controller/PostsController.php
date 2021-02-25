@@ -16,6 +16,10 @@ class PostsController extends AppController
      *
      * @return \Cake\Http\Response|null|void Renders view
      */
+    public function initialize(): void
+    {
+        parent::initialize();
+    }
     public function index()
     {
         $this->paginate = [
@@ -108,8 +112,5 @@ class PostsController extends AppController
         return $this->redirect(['action' => 'index']);
     }
 
-    public function initialize(): void
-    {
-    parent::initialize();
-    }
+    
 }

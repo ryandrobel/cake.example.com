@@ -44,15 +44,15 @@ class PostsFixture extends TestFixture
     {
         $this->records = [
             [
-                'id' => '5e1113df-4aaf-441f-b615-626eb3b7a840',
+                'id' => '67a41e7f-d02c-442e-804f-adf0c2fa2152',
                 'title' => 'Lorem ipsum dolor sit amet',
                 'slug' => 'Lorem ipsum dolor sit amet',
                 'meta_keywords' => 'Lorem ipsum dolor sit amet',
                 'meta_description' => 'Lorem ipsum dolor sit amet',
                 'body' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
-                'user_id' => '15b31e01-8331-4dfb-a677-aaf934a40a42',
-                'created' => '2021-02-25 21:41:56',
-                'modified' => '2021-02-25 21:41:56',
+                'user_id' => 'ced7685e-40e1-4390-9302-5dc5e9d0f67e',
+                'created' => '2021-02-25 22:07:57',
+                'modified' => '2021-02-25 22:07:57',
             ],
         ];
         parent::init();
