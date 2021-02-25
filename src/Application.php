@@ -133,7 +133,7 @@ class Application extends BaseApplication
         } catch (MissingPluginException $e) {
             // Do not halt if the plugin is missing
         }
-
+        $this->addPlugin('Authentication');
         $this->addPlugin('Migrations');
 
         // Load more plugins here
